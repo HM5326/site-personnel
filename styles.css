@@ -1,0 +1,122 @@
+.gradient-background {
+  background: linear-gradient(300deg, #43C6AC, #191654);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.img-profil {
+  border-raDius: 40%;
+  border: 4px solid #43C6AC;
+}
+
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
+  background-color: #43C6AC !important;
+}
+
+.contact-section {
+  padding: 80px 20px;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-section .container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 10px;  
+}
+
+.contact-section .intro {    
+  font-size: 1.1rem;
+  margin-bottom: 60px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+/* Bloc infos */
+.contact-info {
+  background: #f7f8fc;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: left;
+  border-left: 4px solid #43C6AC;
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+  color: #43C6AC;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 14px;
+}
+
+.info-item p {
+  padding: 0;
+  margin: 0;
+}
+
+.response-note {
+  font-size: 0.95rem;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+/* Formulaire */
+.contact-form {
+  background: #f7f8fc;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: left;
+  border-left: 4px solid #43C6AC;
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+  color: #43C6AC;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}  
+
+.cta-secondary {
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
